@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShelfApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_book_shelf">Your Bookshelf</string>
+    <string name="sort">Sort by:</string>
+    <string name="ascending_order">Ascending Order -</string>
+    <string name="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="error_occurred">An Error Occurred</string>
+    <string name="summary_heading">Summary:</string>
+    <string name="logout">Logout</string>
+    <string name="alias">"Alias: "</string>
+    <string name="hits">Hits:</string>
+    <string name="updated_on">"Updated on - "</string>
+    <string name="sign_in_with_shelf_app">Sign In With Shelf APP</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="didn_t_have_a_account_sign_up">Didn\'t Have a Account Sign Up</string>
+    <string name="sign_up_with_shelf_app">Sign Up With Shelf APP</string>
+    <string name="select_your_country">Select Your Country</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_a_member_login">Already a member Login</string>
+</resources>

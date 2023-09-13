@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <layout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools">
+
+            <data>
+
+            </data>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                tools:context=".ui.fragment.SignUpFragment">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDriver"
+                    android:layout_width="230dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ic_books"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/nestedScrollView"/>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="22dp"
+                    android:id="@+id/nestedScrollView"
+                    android:background="@drawable/bg_sign_up"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivDriver">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_sign_up">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSignIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/sign_up_with_shelf_app"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvSignIn" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginHorizontal="32dp"
+                            android:layout_marginTop="8dp"
+                            android:paddingStart="16dp"
+                            android:maxLength="30"
+                            android:paddingEnd="56dp"
+                            android:background="@drawable/bg_input_text"
+                            android:hint="@string/enter_your_name"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:singleLine="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/select_your_country"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/etName" />
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:id="@+id/llSpinner"
+                        android:background="@drawable/bg_input_text"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCountry">
+                        <Spinner
+                            android:id="@+id/countrySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_centerHorizontal="true"
+                            android:paddingStart="16dp"
+                            android:textSize="16sp"
+                            android:overlapAnchor="false"
+                            android:maxLength="30"
+                            android:paddingEnd="56dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/password"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/llSpinner" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginHorizontal="32dp"
+                            android:layout_marginTop="8dp"
+                            android:layoutDirection="ltr"
+                            android:paddingStart="16dp"
+                            android:maxLength="30"
+                            android:paddingEnd="56dp"
+                            android:background="@drawable/bg_input_text"
+                            android:hint="@string/enter_your_password"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:singleLine="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvPassword" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="32dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_sorting_selector"
+                            android:gravity="center"
+                            android:text="@string/sign_up"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/etPassword" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvLogin"
+                        android:text="@string/already_a_member_login"
+                        android:textSize="12sp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="32dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnSignUp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </layout>
